@@ -1,0 +1,155 @@
+{
+  "defaultResponse": [
+    "Es tut mir leid, Ihre Frage habe ich ganz nicht verstanden. Könnten Sie bitte Ihre Frage umformulieren oder weitere Details angeben?",
+    "Entschuldigung, ich konnte Ihre Frage nicht vollständig verstehen. Können Sie sie bitte noch einmal stellen?",
+    "Könnten Sie bitte Ihre Frage wiederholen oder mehr Details angeben?",
+    "Entschuldigung, Ihre Frage kann ich nicht verstehen. Falls Sie die Antworten schneller bekommen möchten, können Sie uns telefonisch erreichen auf 012345632569 oder per E-Mail auf shoppy@gmail.com",
+    "Leider können wir Ihre Frage nicht verstehen. Bitte geben Sie andere Wörter, damit wir es erkennen können."
+  ],
+  "responses": [
+    {
+      "keywords": ["hallo"],
+      "replies": [
+        "Hallo! Schön, dass Sie hier sind. Was kann ich Ihnen helfen?",
+        "Guten Tag! Wie kann ich Ihnen behilflich sein?",
+        "Hi! Wie kann ich Ihnen heute helfen?"
+      ],
+      "action": "greet"
+    },
+    {
+      "keywords": ["farbe"],
+      "replies": [
+        "Verschiedene Farbe sind verfügbar. Wir haben blau, schwarz, weiß, braun und rot. Haben Sie noch Fragen zu stellen?",
+        "Es gibt verschiedene Farbe für jeden Artikel. Wir haben braun, blau, schwarz, rot und weiß. Alle dieser Farbe steht für Sie zur Verfügung. Möchten Sie noch Fragen zu stellen?"
+      ],
+      "action": "colorInStock"
+    },
+    {
+      "keywords": ["angebot"],
+      "replies": [
+        " Natürlich! Wir haben derzeit einen Sommerschlussverkauf mit bis zu 50% Rabatt auf ausgewählte Artikel. Zusätzlich erhalten Sie bei einem Einkauf über 100 Euro einen Rabatt von 10 Euro. ",
+        "Entschuldigung, wir haben derzeit keine Angebote. Die Angebote finden Sie normalerweise Ende des Sommers unt Anfang des Winters. Sie können uns auf Instagram shoppy._ abonnieren, damit Sie die Angebote nicht verpassen!"
+      ],
+      "action": "angebot"
+    },
+    {
+      "keywords": ["adresse"],
+      "replies": [
+        "Vielen Dank! Wir werden Ihre Rückerstattung so schnell wie möglich bearbeiten.",
+        "Danke schön! Entschuldigung für die Unannehmlichkeiten. Wir werden den Ersatzartikel so schnell wie möglich bearbeiten."
+      ],
+      "action": "addressGiven"
+    },
+    {
+      "keywords": ["daue", "liefer"],
+      "replies": [
+        "die Lieferung dauert 3 - 5 Werktage. Wenn Sie das Paket schneller ankommen möchten, sollen Sie 2 Euro höher bezahlen. Möchten Sie die Expresslieferung oder normale Lieferung?",
+        "Normalerweise ist die Lieferung in 3-5 Werktagen abgeschlossen. Wir informieren Sie, sobald das Paket auf dem Weg ist. Sie können auch die Expresslieferung haben, indem Sie 2 Euro höher bezahlen.  Möchten Sie die Expresslieferung oder normale Lieferung?"
+      ],
+      "action": "lieferDauert"
+    },
+    {
+      "keywords": ["express"],
+      "replies": [
+        "Natürlich! Wir werden den Paketliefer informieren, dass Sie eine Expresslieferung bestellt haben. Haben Sie noch Fragen oder möchten Sie schon hier bestellen?",
+        "Gerne! Wenn das Paket auf dem Weg ist, informieren wir Sie. Haben Sie noch Fragen oder möchten Sie schon hier bestellen?"
+      ],
+      "action": "lieferDauert"
+    },
+    {
+      "keywords": ["kaufen"],
+      "replies":[
+        "Was möchten Sie kaufen? Wir können checken, ob es auf der Lager ist."
+      ],
+      "action": "buyItem"
+    },
+    {
+      "keywords": ["bestellen"],
+      "replies": [
+      "Gerne! Sie können hier Ihre IBAN Nummer, Adresse, Ihren Vollname und die Farbe des zukaufenden Artikels eingeben."
+      ],
+      "action": "directBuy"
+    },
+    {
+      "keywords": ["beschaedigt"],
+      "replies": [
+        "Es tut mir leid, das zu hören. Bitte geben Sie Ihre Bestellnummer und ein Foto des beschädigten Artikels an.",
+        "Oh nein! Bitte teilen Sie mir Ihre Bestellnummer mit und senden Sie ein Foto des beschädigten Artikels.",
+        "Das ist ärgerlich! Geben Sie mir bitte Ihre Bestellnummer und ein Foto des beschädigten Artikels."
+      ],
+      "action": "reportDamage"
+    },
+    {
+      "keywords": ["bestellnummer"],
+      "replies": [
+        "Vielen Dank. Wir werden Ihren Fall prüfen. Bitte geben Sie ein Foto des beschädigten Artikels an.",
+        "Danke für die Bestellnummer. Jetzt benötige ich nur noch ein Foto des beschädigten Artikels.",
+        "Bestellnummer erhalten. Senden Sie mir bitte noch ein Foto des beschädigten Artikels."
+      ],
+      "action": "collectOrderNumber"
+    },
+    {
+      "keywords": ["foto"],
+      "replies": [
+        "Vielen Dank für das Foto. Wir werden Ihre Rückerstattung so schnell wie möglich bearbeiten.",
+        "Foto erhalten, danke! Wir kümmern uns um Ihre Rückerstattung.",
+        "Danke für das Foto. Wir werden Ihre Rückerstattung schnellstmöglich bearbeiten."
+      ],
+      "action": "processRefund"
+    },
+    {
+      "keywords": ["wie", "lange"],
+      "replies": [
+        "Rückerstattungen werden normalerweise innerhalb von 5-7 Werktagen bearbeitet. Wir werden Sie benachrichtigen, sobald die Rückerstattung abgeschlossen ist.",
+        "Es dauert in der Regel 5-7 Werktage, bis die Rückerstattung bearbeitet ist. Wir halten Sie auf dem Laufenden.",
+        "Normalerweise sind Rückerstattungen in 5-7 Werktagen abgeschlossen. Wir informieren Sie, sobald es erledigt ist."
+      ],
+      "action": "provideRefundTimeframe"
+    },
+    {
+      "keywords": ["zuruecksenden"],
+      "replies": [
+        "In einigen Fällen benötigen wir den beschädigten Artikel zurück. Bitte halten Sie ihn bereit, und unser Team wird Sie kontaktieren, falls eine Rücksendung erforderlich ist.",
+        "Manchmal ist eine Rücksendung des beschädigten Artikels nötig. Wir melden uns bei Ihnen, falls dies der Fall ist.",
+        "Bitte halten Sie den beschädigten Artikel bereit. Wir werden Sie kontaktieren, falls eine Rücksendung notwendig ist."
+      ],
+      "action": "returnItem"
+    },
+    {
+      "keywords": ["lager"],
+      "replies": [
+        "Falls der Artikel nicht mehr auf Lager ist, bieten wir Ihnen entweder eine vollständige Rückerstattung oder eine Gutschrift für zukünftige Käufe an.",
+        "Sollte der Artikel nicht verfügbar sein, können wir Ihnen eine Rückerstattung oder eine Gutschrift anbieten.",
+        "Wenn der Artikel ausverkauft ist, bieten wir Ihnen eine Rückerstattung oder eine Gutschrift an."
+      ],
+      "action": "handleOutOfStock"
+    },
+    {
+      "keywords": ["anstelle"],
+      "replies": [
+        "Ja, Sie können auch einen Ersatzartikel erhalten, wenn dieser verfügbar ist. Möchten Sie einen Ersatzartikel oder lieber eine Rückerstattung?",
+        "Natürlich, Sie können einen Ersatzartikel bekommen, wenn er verfügbar ist. Möchten Sie einen Ersatzartikel oder eine Rückerstattung?",
+        "Gerne, wenn der Ersatzartikel verfügbar ist, senden wir ihn Ihnen zu. Bevorzugen Sie das oder eine Rückerstattung?"
+      ],
+      "action": "offerReplacement"
+    },
+    {
+      "keywords": ["gern", "ersatzartikel"],
+      "replies": [
+        "Verstanden. Wir werden prüfen, ob der Ersatzartikel auf Lager ist, und Ihnen eine Bestätigung per E-Mail senden.",
+        "Wir werden den Lagerbestand prüfen und Ihnen eine E-Mail-Bestätigung für den Ersatzartikel senden.",
+        "Wir prüfen den Lagerbestand und senden Ihnen eine Bestätigung per E-Mail."
+      ],
+      "action": "processReplacement"
+    },
+    {
+      "keywords": ["dank"],
+      "replies": [
+        "Gern geschehen! Wenn Sie weitere Fragen haben, stehen wir Ihnen jederzeit zur Verfügung.",
+        "Sehr gerne! Falls Sie noch Fragen haben, bin ich hier.",
+        "Immer wieder gerne! Wenn Sie noch etwas brauchen, lassen Sie es mich wissen."
+      ],
+      "action": "closeConversation"
+    }
+  ]
+}

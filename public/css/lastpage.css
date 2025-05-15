@@ -1,0 +1,82 @@
+/* Ensure full width and height for the container */
+.container-full, .container-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimage-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Make the background image cover the whole page */
+    background-position: center; /* Center the background image */
+}
+
+.img-full-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity */
+}
+
+.infobox {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 800px; /* Adjust max width as needed */
+    font-family: Arial, sans-serif; /* Set the font to Arial */
+}
+
+.infotext_big h1 {
+    margin-bottom: 20px;
+}
+
+.infotext_small h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.infotext_small p {
+    margin: 0 0 10px 0;
+}
+
+.infotext_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif; /* Ensure the button text is also Arial */
+}
+
+.infotext_btn:hover {
+    background-color: rgb(150, 50, 50); /* Adjust hover color */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scroll bars */
+    font-family: Arial, sans-serif; /* Set the default font to Arial */
+}
